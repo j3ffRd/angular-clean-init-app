@@ -1,0 +1,19 @@
+{
+  "name": "@bank-app/core",
+  "version": "0.0.2",
+  "author": "jef.fr",
+  "homepage": "",
+  "license": "ISC",
+  "main": "../../dist/core/index.js",
+  "types": "../../dist/core/index.d.ts",
+  "files": [
+    "../../dist/core/**/*"
+  ],
+  "scripts": {
+    "build": "rimraf ../../dist/core && tsc",
+    "test": "rimraf ../../coverage/core && jest --config jest.config.ts --no-cache",
+    "prepublish": "tsc",
+    "clean": "rimraf ../../dist/core ../../coverage/core",
+    "watch:test": "jest --watchAll"
+  }  
+}

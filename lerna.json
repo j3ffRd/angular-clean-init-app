@@ -1,0 +1,11 @@
+{
+  "npmClient": "npm",
+  "packages": ["packages/*"],
+  "version": "independent",
+  "useWorkspaces": true,
+  "command": {
+    "version": {
+      "message": "🚀 Publish new releases"
+    }
+  }
+}
