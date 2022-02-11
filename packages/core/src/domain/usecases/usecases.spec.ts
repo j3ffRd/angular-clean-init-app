@@ -1,11 +1,11 @@
-import {UseCase} from './usecases';
+import { UseCase } from './usecases';
 
 describe('use case', () => {
-    test('first test', async () => {
-        const useCase = new UseCase();
+  test('first test', async () => {
+    const useCase = new UseCase();
 
-        const result = await useCase.execute();
+    const result = await useCase.execute();
 
-        expect(result).toBe("OK!");
-    })
+    expect(result).toBe('OK!');
+  });
 });
