@@ -4,7 +4,9 @@
   "scripts": {
     "test": "lerna run test",
     "build": "lerna run build",
+    "build:stats": "npm run build:stats --prefix packages/bank-app",
     "start": "npm start --prefix packages/bank-app",
+    "analyze": "webpack-bundle-analyzer dist/bank-app/stats.json",
     "postinstall": "lerna run bootstrap",
     "prepublishOnly": "npm build && npm test",
     "deploy": "lerna version && lerna publish from-package"
@@ -19,7 +21,8 @@
     "rimraf": "^3.0.2",
     "ts-jest": "^27.1.2",
     "ts-node": "^10.5.0",
-    "typescript": "^4.5.5"
+    "typescript": "^4.5.5",
+    "webpack-bundle-analyzer": "^4.5.0"
   },
   "workspaces": {
     "packages": [
